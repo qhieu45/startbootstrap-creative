@@ -184,12 +184,14 @@ header.masthead {
 }
 
 header.masthead hr {
+  max-width: 75px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 header.masthead h1 {
   font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 header.masthead p {
