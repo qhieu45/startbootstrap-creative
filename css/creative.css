@@ -361,14 +361,50 @@ header.masthead .logo {
 }
 
 #hinnasto {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+#hinnasto h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 1rem;
+}
+
+#hinnasto .category, #hinnasto .hinnasto-heading {
+  padding-left: 0;
+}
+
+#hinnasto .category ul {
+  padding-left: 1.2rem;
+}
+
+#hinnasto .category-item-name span {
+  font-size: .7rem;
+}
+
+#hinnasto .category-item-price {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
   #hinnasto {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  #hinnasto h3 {
+    font-size: 2.5rem;
+  }
+  #hinnasto .category-item {
+    padding-right: 2rem;
   }
 }
 
