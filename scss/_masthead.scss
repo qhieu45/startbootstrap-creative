@@ -1,9 +1,12 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
+  // padding-top: 10rem;
+  // padding-bottom: calc(10rem - 56px);
+  // background-image: url('../img/header.jpg');
+  padding-top: 5rem;
+  text-align: center;
+  background-color: rgb(243, 245, 231);
+  background-position: right center;
   @include background-cover;
   hr {
     max-width: 75px;
@@ -17,9 +20,15 @@ header.masthead {
   p {
     font-weight: 300;
   }
+  .logo {
+    max-height: 8rem;
+  }
   @media (min-width: 768px) {
     p {
       font-size: 1.15rem;
+    }
+    .logo {
+      max-height: 10rem;
     }
   }
   @media (min-width: 992px) {
@@ -34,6 +43,21 @@ header.masthead {
   @media (min-width: 1200px) {
     h1 {
       font-size: 4rem;
+    }
+    .logo {
+      max-height: 17rem;
+    }
+  }
+  // display picture as background for screen from ipad & upper
+  @media (min-width: 768px) {
+    text-align: left;
+    padding-bottom: calc(10rem - 56px);
+    padding-top: 8rem;
+    background-image: url('../img/header.jpg');
+    background-color: none;
+    hr {
+      margin-left: 0;
+      max-width: 200px;
     }
   }
 }

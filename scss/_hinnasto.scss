@@ -1,0 +1,8 @@
+#hinnasto {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

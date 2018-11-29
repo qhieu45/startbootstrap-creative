@@ -17,7 +17,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: #3b3937;
 }
 
 hr.light {
@@ -25,13 +25,13 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #3b3937;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #3b3937;
 }
 
 h1,
@@ -44,7 +44,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #3b3937 !important;
 }
 
 .bg-dark {
@@ -101,12 +101,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  color: #3b3937;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #3b3937;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -119,12 +119,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: #3b3937;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: #3b3937 !important;
   background-color: transparent;
 }
 
@@ -160,10 +160,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    color: #3b3937;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    color: #3b3937;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -171,15 +171,15 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: #3b3937;
   }
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
-  background-position: center center;
+  padding-top: 5rem;
+  text-align: center;
+  background-color: #f3f5e7;
+  background-position: right center;
   background-size: cover;
 }
 
@@ -198,9 +198,16 @@ header.masthead p {
   font-weight: 300;
 }
 
+header.masthead .logo {
+  max-height: 8rem;
+}
+
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
+  }
+  header.masthead .logo {
+    max-height: 10rem;
   }
 }
 
@@ -220,14 +227,32 @@ header.masthead p {
   header.masthead h1 {
     font-size: 4rem;
   }
+  header.masthead .logo {
+    max-height: 17rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    text-align: left;
+    padding-bottom: calc(10rem - 56px);
+    padding-top: 8rem;
+    background-image: url("../img/header.jpg");
+    background-color: none;
+  }
+  header.masthead hr {
+    margin-left: 0;
+    max-width: 200px;
+  }
 }
 
 .service-box {
   max-width: 400px;
 }
 
-.hinnasto-pic {
-  max-height: 4em;
+.palvelu-pic {
+  max-height: 4rem;
+  margin-bottom: 1rem;
 }
 
 .portfolio-box {
@@ -246,7 +271,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(59, 57, 55, 0.9);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -294,7 +319,7 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: #3b3937 !important;
 }
 
 .btn {
@@ -310,16 +335,53 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #3b3937;
+  border-color: #3b3937;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #2e2c2b !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.mobile-header {
+  background-image: url("../img/header-mobile.jpg");
+  background-position: left top;
+}
+
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+#hinnasto {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  #hinnasto {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+#contact a {
+  color: #fff;
+}
+
+#contact hr {
+  border-color: #cf2239;
+}
+
+@media (max-width: 768px) {
+  #contact .open-hours {
+    margin-top: 2.5rem;
+  }
 }

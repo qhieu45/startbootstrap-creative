@@ -1,0 +1,10 @@
+// Styling for the mobile-header
+.mobile-header {
+    background-image: url('../img/header-mobile.jpg');
+    background-position: left top;
+
+    // hide if screen size table & upper 
+    @media (min-width: 768px) {
+      display: none;
+    }
+}

@@ -32,14 +32,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger d-lg-none d-xl-none" href="#page-top">TM Beauty & Nails</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Hinnasto</a>
+              <a class="nav-link js-scroll-trigger" href="#hinnasto">Hinnasto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Palvelut</a>
@@ -55,29 +54,28 @@
       </div>
     </nav>
 
-    <header class="masthead text-left text-white d-flex">
+    <header class="masthead text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1>
-              <strong>TM Beauty & Nails</strong>
-            </h1>
-            <hr align="left">
+            <img class="logo" src="/img/logo.svg" alt="Logo">
+            <hr align="center">
           </div>
-          <div class="col-lg-10 mx-auto hinnasto-popup">
-            <p class="text-faded mb-5">Avajaistarjoukset Joulukuulle</p>
+          <div class="col-lg-10 mb-4 mx-auto hinnasto-popup">
             <a class="btn btn-primary btn-xl js-scroll-trigger" target="_blank" href="/img/tmbeauty/tarjoukset.JPG">Avajaistarjoukset</a>
           </div>
         </div>
       </div>
     </header>
+    <section class="mobile-header">
+    </section>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="hinnasto">
       <div class="container">
         <div class="row hinnasto-popup">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-12 mx-auto">
             <h2 class="section-heading text-white">Hinnasto</h2>
-            <hr class="light my-4">
+            <hr class="light my-4" align="left">
             <p class="text-faded mb-4">Katso ajankohtaiset avajaistarjoukset</p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="/img/tmbeauty/tarjoukset.JPG">Joulukuun Hinnasto</a>
           </div>
@@ -99,39 +97,39 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <!-- <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i> -->
-              <img class="hinnasto-pic" src="img/services/rakennekynnet.svg" alt="Rakennekynnet">
+              <img class="palvelu-pic" src="img/services/rakennekynnet.svg" alt="Rakennekynnet">
               <h4 class="mb-3">Rakennekynnet</h4>
               <!-- <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p> -->
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <img class="hinnasto-pic" src="img/services/jalkahoidot.svg" alt="Jalkahoidot">
+              <img class="palvelu-pic" src="img/services/jalkahoidot.svg" alt="Jalkahoidot">
               <h4 class="mb-3">Jalkahoidot</h4>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <img class="hinnasto-pic" src="img/services/kestopigmentoinnit.svg" alt="Kestopigmentoinnit">
+              <img class="palvelu-pic" src="img/services/kestopigmentoinnit.svg" alt="Kestopigmentoinnit">
               <h4 class="mb-3">Kestopigmentoinnit</h4>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <img class="hinnasto-pic" src="img/services/ripsienpidennykset.svg" alt="Ripsienpidennykset">
+              <img class="palvelu-pic" src="img/services/ripsienpidennykset.svg" alt="Ripsienpidennykset">
               <h4 class="mb-3">Ripsienpidennykset</h4>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center"></div>
+          <div class="col-lg-3 col-md-6 d-none d-lg-block text-center"></div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <img class="hinnasto-pic" src="img/services/parturi.svg" alt="Parturi">
+              <img class="palvelu-pic" src="img/services/parturi.svg" alt="Parturi">
               <h4 class="mb-3">Parturi / Kampaamo</h4>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <img class="hinnasto-pic" src="img/services/lashlift.svg" alt="Lash Lift">
+              <img class="palvelu-pic" src="img/services/lashlift.svg" alt="Lash Lift">
               <h4 class="mb-3">Lash Lift</h4>
             </div>
           </div>
@@ -263,7 +261,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mx-auto text-center">
+          <hr>
+          <div class="col-lg-6 mx-auto text-center open-hours">
             <h2 class="section-heading">Aukioloajat</h2>
             <hr class="my-4">
             <p>Ma - Pe &nbsp;&nbsp; 10:00 - 18:00</p>
