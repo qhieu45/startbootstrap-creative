@@ -395,6 +395,11 @@ header.masthead .logo {
   margin-bottom: .5rem;
 }
 
+#hinnasto .category-item-sub {
+  color: #e6ebcb;
+  font-style: italic;
+}
+
 @media (min-width: 768px) {
   #hinnasto {
     padding-top: 3rem;
