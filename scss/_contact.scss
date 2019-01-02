@@ -7,6 +7,10 @@
     border-color: rgb(207, 34, 57);
   }
 
+  .social-media {
+    justify-content: space-evenly;
+  }
+
   @media (max-width: 768px) {
     .open-hours {
       margin-top: 2.5rem;
